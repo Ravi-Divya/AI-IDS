@@ -33,7 +33,7 @@ export function Layout() {
               <Menu className="h-5 w-5" />
             </Button>
             <Shield className="h-5 w-5 text-primary hidden md:block" />
-            <span className="font-bold text-sm">{user?.company_name || 'AI-IDS'}</span>
+            <span className="font-bold text-sm">{user?.company_name === 'coming' ? 'Divya Project' : (user?.company_name || 'Divya Project')}</span>
           </div>
           <NotificationBell />
         </header>

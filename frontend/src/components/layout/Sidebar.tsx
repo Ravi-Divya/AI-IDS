@@ -58,7 +58,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
             <Shield className="h-8 w-8 text-primary flex-shrink-0" />
             {(!collapsed || isOpen) && (
               <div className="flex flex-col">
-                <span className="font-bold text-sm">{user?.company_name || 'AI-IDS'}</span>
+                <span className="font-bold text-sm">{user?.company_name === 'coming' ? 'Divya Project' : (user?.company_name || 'Divya Project')}</span>
                 <span className="text-[10px] text-muted-foreground">Security Dashboard</span>
               </div>
             )}
